@@ -1,5 +1,8 @@
 pip install pyinstaller
 
+
+
+
 pyinstaller --onefile --noconsole --distpath C:\path\to\output\directory your_script_name.py
 pyinstaller --onefile --noconsole update2.py
   
