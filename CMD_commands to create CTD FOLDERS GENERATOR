@@ -1,0 +1,2 @@
+cd C:/Users/lenoco/Desktop/test
+pyinstaller --onefile --windowed ctd_folders_generator.py
