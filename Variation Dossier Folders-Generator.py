@@ -54,7 +54,7 @@ def paste_text(entry):
 
 # Create the main window
 root = tk.Tk()
-root.title("CTD Folders-Generator by OE")
+root.title("Variation Dossier Folders-Generator by OE")
 
 # Create labels and entry fields
 labels = ["Brand Name:", "CCR-RO:", "Variation Title:", "Dispatch Number:"]
@@ -88,7 +88,7 @@ def show_context_menu(event, entry):
     context_menu.tk_popup(event.x_root, event.y_root)
 
 # Create a button to generate the file structure
-generate_button = tk.Button(root, text="Generate CTD Structure", command=generate_file_structure)
+generate_button = tk.Button(root, text="Generate Variation Dossier Structure", command=generate_file_structure)
 generate_button.grid(row=len(labels), column=0, columnspan=4, pady=(10, 0))
 
 # Run the main event loop
