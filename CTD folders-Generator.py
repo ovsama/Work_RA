@@ -12,7 +12,7 @@ def generate_file_structure():
     dispatch_number = dispatch_number_entry.get()
 
     today = datetime.date.today().strftime('%Y-%m-%d')
-    folder_name = f"{today}-Renewal-{brand_name} {dosage} {pharmaceutical_form}-{country}-Dispatch{dispatch_number}"
+    folder_name = f"Renewal2024-{brand_name} {dosage} {pharmaceutical_form}-{country}-Dispatch{dispatch_number}"
 
     # Create the main folder
     main_folder = os.path.join(os.getcwd(), folder_name)
@@ -57,7 +57,7 @@ def paste_text(entry):
 
 # Create the main window
 root = tk.Tk()
-root.title("CTD Folders-Generator by OE")
+root.title("Renewal Dossier Folders-Generator by OE")
 
 # Create labels and entry fields
 labels = ["Brand Name:", "Dosage:", "Pharmaceutical Form:", "Country:", "Dispatch Number:"]
@@ -92,7 +92,7 @@ def show_context_menu(event, entry):
     context_menu.tk_popup(event.x_root, event.y_root)
 
 # Create a button to generate the file structure
-generate_button = tk.Button(root, text="Generate CTD Structure", command=generate_file_structure)
+generate_button = tk.Button(root, text="Generate Renewal Dossier Structure", command=generate_file_structure)
 generate_button.grid(row=len(labels), columnspan=2)
 
 # Run the main event loop
